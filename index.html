@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Exercice 1</title>
+  <style>
+    button
+    {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<!-- Ajout du ng-app pour que angular soit dans tout le body -->
+<body ng-app>
+  <div class="container-fluid text-center">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Exercice 1</h1>
+        <p class="lead">Partie 4</p>
+        <p>Incrémentation / Décrémantation</p>
+      </div>
+    </div>
+    <!-- Ajout d'un ng-click qui permet d'effectuer une action au click -->
+    <button ng-click="cpt = cpt+1" type="button" name="button">+</button>
+    <button ng-click="cpt = cpt-1" type="button" name="button">-</button>
+    <!-- Variable compteur qui sera incrémentée / décrémentée -->
+    <p>{{cpt}}</p>
+  </div>
+</body>
+</html>
